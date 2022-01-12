@@ -9,6 +9,5 @@ namespace AvesdoService.Core.Interfaces
     public abstract class IModel<T> where T : IEquatable<T>
     {
         public T Id { get; set; }
-        public string Key { get; set; }
     }
 }
