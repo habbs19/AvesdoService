@@ -10,6 +10,7 @@ namespace AvesdoService.Core.Models
     public class OrderItemModel : IModel<int>
     {
         public int OrderItemId { get => Id; set => Id = value; }
+        public int OrderID { get; set; }
         public int ItemID { get; set; }
         public int Quantity { get; set; }
     }

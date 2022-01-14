@@ -9,8 +9,7 @@ namespace AvesdoService.Core
 {
     public interface IDatabase<T> where T : class
     {
-        Task<IReadOnlyDictionary<int, object>> ExecuteReaderAsync(string query, List<T>? parameters = null);
-        Task<DataTable> ExecuteReaderAsync(string query, bool returnTable, List<T>? parameters = null);
+        Task<DataTable?> ExecuteReaderAsync(string query, List<T>? parameters = null, bool storedProcedure = true);
         Task<int> ExecuteNonQueryAsync(string query, List<T>? parameters = null);
         IDbConnection GetConnection();
 

@@ -10,5 +10,8 @@ namespace AvesdoService.Core.Models
     {
         public int InvoiceID { get=> Id; set => Id = value; }
         public int OrderID { get; set; }
+        public int AddressID { get; set; }
+        public decimal SubTotal { get; set; }
+        public decimal Total { get; set; }
     }
 }
